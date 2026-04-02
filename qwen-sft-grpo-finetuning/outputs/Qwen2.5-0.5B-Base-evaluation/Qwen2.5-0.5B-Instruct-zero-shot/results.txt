@@ -1,0 +1,6 @@
+Start evaluating the zero-shot experiment.
+Args: Namespace(model_signature='Qwen/Qwen2.5-0.5B-Instruct', sft_adapter_path=None, grpo_adapter_path=None, output_path='./outputs/Qwen/Qwen2.5-0.5B-Instruct-zero-shot')
+Overall Accuracy (including invalid): 13.00%
+Valid Accuracy (excluding invalid): 13.00%
+Invalid Rate: 0.00%
+Evaluation Duration: 663.59 seconds

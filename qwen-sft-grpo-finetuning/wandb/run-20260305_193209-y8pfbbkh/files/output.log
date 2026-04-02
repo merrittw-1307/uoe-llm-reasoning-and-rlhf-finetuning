@@ -1,0 +1,34 @@
+[34m[1mwandb[0m: Detected [huggingface_hub.inference, openai] in use.
+[34m[1mwandb[0m: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+[34m[1mwandb[0m: For more information, check out the docs at: https://weave-docs.wandb.ai/
+  0% 0/125 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/content/drive/MyDrive/nlu_assignment/grpo/main.py", line 137, in <module>
+    wandb.finish()
+    ^^^^^^
+  File "/content/drive/MyDrive/nlu_assignment/grpo/main.py", line 130, in main
+    )
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 2325, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 2674, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/trainer.py", line 4014, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/trl/extras/profiling.py", line 98, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/trl/trainer/grpo_trainer.py", line 1279, in _prepare_inputs
+    generation_batch = self._generate_and_score_completions(generation_batch)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/trl/trainer/grpo_trainer.py", line 1677, in _generate_and_score_completions
+    rewards_per_func = self._calculate_rewards(inputs, original_prompts, completions, completion_ids_list)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/trl/extras/profiling.py", line 98, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/trl/trainer/grpo_trainer.py", line 1327, in _calculate_rewards
+    rewards_per_func[:, i] = torch.tensor(output_reward_func, dtype=torch.float32, device=device)
+    ~~~~~~~~~~~~~~~~^^^^^^
+RuntimeError: The expanded size of the tensor (16) must match the existing size (0) at non-singleton dimension 0.  Target sizes: [16].  Tensor sizes: [0]

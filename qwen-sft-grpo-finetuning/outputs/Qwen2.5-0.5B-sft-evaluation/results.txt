@@ -1,0 +1,6 @@
+Start evaluating the sft experiment.
+Args: Namespace(model_signature='Qwen/Qwen2.5-0.5B-Instruct', sft_adapter_path='./checkpoints/Qwen/Qwen2.5-0.5B-Instruct-sft', grpo_adapter_path=None, output_path='./outputs/Qwen2.5-0.5B-sft-evaluation')
+Overall Accuracy (including invalid): 30.00%
+Valid Accuracy (excluding invalid): 30.00%
+Invalid Rate: 0.00%
+Evaluation Duration: 802.50 seconds

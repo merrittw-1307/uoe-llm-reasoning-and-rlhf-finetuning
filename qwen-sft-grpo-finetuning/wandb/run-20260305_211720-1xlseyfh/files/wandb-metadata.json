@@ -1,0 +1,46 @@
+{
+  "os":  "Linux-6.6.113+-x86_64-with-glibc2.35",
+  "python":  "CPython 3.12.12",
+  "startedAt":  "2026-03-05T21:17:20.767391Z",
+  "args":  [
+    "--model_signature",
+    "Qwen/Qwen2.5-0.5B-Instruct",
+    "--adapter_path",
+    "./checkpoints/Qwen/Qwen2.5-0.5B-Instruct-sft",
+    "--output_path",
+    "./checkpoints/Qwen/Qwen2.5-0.5B-Instruct-grpo-v2",
+    "--wandb_token",
+    "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"
+  ],
+  "program":  "/content/drive/MyDrive/nlu_assignment/grpo/main.py",
+  "codePath":  "grpo/main.py",
+  "codePathLocal":  "grpo/main.py",
+  "email":  "wangmingyu0704@icloud.com",
+  "root":  "/content/drive/MyDrive/nlu_assignment",
+  "host":  "16ca2274511c",
+  "executable":  "/usr/bin/python3",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA A100-SXM4-40GB",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "120942624768",
+      "used":  "47861633024"
+    }
+  },
+  "memory":  {
+    "total":  "89629200384"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-SXM4-40GB",
+      "memoryTotal":  "42949672960",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-5cacce8b-24a1-5af1-9b8a-9ef6e915b917"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "qvh7q9eummx3kii9cwrhau2jk6q9uqsw"
+}

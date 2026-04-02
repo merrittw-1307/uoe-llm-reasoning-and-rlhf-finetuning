@@ -1,0 +1,46 @@
+{
+  "os":  "Linux-6.6.113+-x86_64-with-glibc2.35",
+  "python":  "CPython 3.12.12",
+  "startedAt":  "2026-03-05T19:46:01.000846Z",
+  "args":  [
+    "--model_signature",
+    "Qwen/Qwen2.5-0.5B-Instruct",
+    "--adapter_path",
+    "./checkpoints/Qwen/Qwen2.5-0.5B-Instruct-sft",
+    "--output_path",
+    "./checkpoints/Qwen/Qwen2.5-0.5B-Instruct-grpo",
+    "--wandb_token",
+    "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"
+  ],
+  "program":  "/content/drive/MyDrive/nlu_assignment/grpo/main.py",
+  "codePath":  "grpo/main.py",
+  "codePathLocal":  "grpo/main.py",
+  "email":  "wangmingyu0704@icloud.com",
+  "root":  "/content/drive/MyDrive/nlu_assignment",
+  "host":  "ed6c41135606",
+  "executable":  "/usr/bin/python3",
+  "cpu_count":  1,
+  "cpu_count_logical":  2,
+  "gpu":  "Tesla T4",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "120942624768",
+      "used":  "48047267840"
+    }
+  },
+  "memory":  {
+    "total":  "13605851136"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "Tesla T4",
+      "memoryTotal":  "16106127360",
+      "cudaCores":  2560,
+      "architecture":  "Turing",
+      "uuid":  "GPU-f110aa00-f994-8271-94fd-8d25c55db565"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "sou0e24ptf7c1b8acmrqmu8yyfchis7e"
+}

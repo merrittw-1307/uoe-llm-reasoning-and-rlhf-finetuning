@@ -1,0 +1,6 @@
+transformers==4.57.3
+trl==0.21.0
+datasets==4.0.0
+peft==0.17.1
+math-verify
+wandb

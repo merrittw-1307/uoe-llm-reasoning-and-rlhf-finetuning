@@ -1,0 +1,2 @@
+Start evaluating the mmlu-redux-college_mathematics dataset with comat method using gpt model and normal configuration
+Final Accuracy: 73.74%
