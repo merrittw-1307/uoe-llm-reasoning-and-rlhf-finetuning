@@ -256,3 +256,13 @@ qwen-sft-grpo-finetuning/
 - **Reward sparsity**: Binary correctness reward provides minimal signal early in GRPO training, slowing convergence on hard problems.
 - **Dataset size**: 3,000 SFT samples is small; the full GSM8K training set (7,473 samples) would likely yield substantial improvement.
 - **Compute constraints**: T4 GPU limits batch size and number of GRPO candidate generations per prompt — both affect training stability and sample diversity.
+
+---
+
+## Reproducibility notes
+
+- Run each section from its own subdirectory so relative paths resolve correctly.
+- Install the corresponding `requirements.txt` before running either pipeline.
+- Part 1 uses the OpenAI API. Provide the API credential through your local environment rather than committing it.
+- Part 2 was designed for a CUDA-enabled Google Colab T4 (16 GB VRAM) and requires a local Weights & Biases token for experiment tracking.
+- The README records the coursework-scale setup. Rerun the commands in a clean environment before comparing new results.
